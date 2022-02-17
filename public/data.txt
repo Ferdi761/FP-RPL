@@ -1,0 +1,21 @@
+{
+   "firstName" : "afdal",
+   "lastName" : "abdallah",
+   "username" : "afdalabdallah",
+   "Email" : "afdalabdallah@gmail.com",
+   "password" : "halo"
+},
+{
+   "firstName" : "anton",
+   "lastName" : "taifan",
+   "username" : "taifan",
+   "Email" : "taifan@gmail.com",
+   "password" : "halo"
+},
+{
+   "firstName" : "sup",
+   "lastName" : "ri",
+   "username" : "supri",
+   "Email" : "supri@gmail.com",
+   "password" : "halo"
+}

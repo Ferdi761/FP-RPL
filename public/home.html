@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+        <title>CV</title>
+        <!-- <link href="/home.css" rel = "stylesheet" type="text/css"> -->
+        <style>
+        #Menu{
+            padding: 10px;
+            background: linear-gradient(to right, darkcyan, rgb(146, 157, 192));
+            box-shadow: 2px 2px 5px grey;
+            
+        }
+
+        header{
+            position: sticky;
+            top: 0px;
+        }
+
+        body{
+            margin:0px;
+            background-color: rgb(225, 231, 238);
+        }
+
+        main{
+            padding: 10px 25%;
+            
+        }
+
+
+
+        .home{
+            padding: 10px;
+            color: white;
+            float: right;
+            margin: 0px;
+            top: 0px;
+
+        }
+
+        #logo{
+            margin: 10px;
+            font-size: 32px;
+            color: white;
+            text-shadow: 2px 2px 4px black;
+        }
+
+        .home:hover{
+            background-color: rgb(114, 107, 126);
+        }
+
+        .layout{
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+        
+        }
+
+        #profil{
+            background-color: rgb(218, 160, 109);
+            height: 700px;
+        }
+
+        #kelebihan{
+            background-color: rgb(218, 215, 68);
+            height: 550px;
+            
+        }
+
+        .dis_flex{
+            display: flex;
+            margin: 0px;
+            flex-direction: row;
+            box-shadow: 1px 1px 1px rgb(134, 134, 134);
+        }
+
+        #pengalaman{
+            padding-left: 20px;
+            background-color: rgb(70, 203, 221);
+            height: 600px;
+            
+        }
+
+        #nama{
+            background-color: rgb(235, 241, 243);
+            height: 170px;
+        }
+
+        #skill{
+            padding-left: 20px;
+            background-color: rgb(177, 167, 187);
+            height: 480px;
+        }
+
+        #foto_holder{
+            border-radius: 50%;
+            display: block;
+            margin-top: 10px;
+            box-shadow: 2px 2px 1px rgb(99, 98, 98);
+            margin-left: auto;
+            margin-right: auto;
+            background-color: black;
+        }
+
+        .isi{
+            width: 70%;
+            padding: 10px;
+            padding-top: 0px;
+            margin: auto;
+            
+        }
+
+        .isi_k{
+            padding: 30px;
+            padding-top: 20px;
+            padding-bottom: 0px;
+        }
+
+        .center{
+        
+            font-size: 22px;
+            padding-left: 0px;
+            padding-right: 0px;
+            text-align: center;
+            
+        }
+
+        #line{
+            margin: auto;
+            width:400px;
+            height: 5px;
+            background-color: black;
+        }
+
+        .contact{
+            
+            display: flex;
+        }
+
+        .contact p{
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+
+        .dot{
+            height: 8px;
+            width: 8px;
+            display: inline-block;
+            border-radius: 50%;
+            background-color: black;
+        }
+
+        @media only screen and(min-width: 1300px){
+            #kelebihan{
+                height: 1000px;
+            }
+        }
+                </style>
+    </head>
+    <body>
+        <header>
+            <div>
+                <div id="Menu" style="background-color: darkcyan;">
+                    <div>
+                        <span id="logo">RPL</span>   
+                        <a href="sign.html" style="text-decoration: none;" target="_blank">
+                            <span class="home">Log In</span>
+                        </a>
+                        <a href="home.html" style="text-decoration: none;">
+                            <span class="home">About</span>
+                        </a>
+                        
+                        <span class = "home">Home</span>
+                    </div>
+                    
+                   
+                </div>
+            </div>
+        </header>
+        <main>
+            <div style="text-align: center; font-size: 34px; background-color: darkkhaki; margin-bottom: 5px;">
+                Curriculum Vitae
+            </div>
+            <div class="dis_flex" style="font-family: 'Nunito', sans-serif;">
+                <div class="layout" >
+                    <section id="profil" >
+                        
+                            <img id="foto_holder" src="cropped.jpeg" width="200px" height="205px">
+                        
+                            <!-- <p style="text-align: center;margin-top: 0px; margin-bottom: 0px;font-weight: bold;">Muhammad Afdal Abdallah</p> -->
+                        
+                        
+                        <div class="isi">
+                            <h2 style="margin-top: 5px;">Profil</h2>
+                            <p style="font-size: 14px;">Seorang mahasiswa Teknik Informatika ITS yang berantusias untuk mengembangkan
+                                softskill dan hardskill. Menjadi seorang Software Engineer merupakan tujuan 
+                                saya.
+                            </p>
+                            <p style="font-size: 14px;">Selalu berpikir bahwa usaha tidak akan mengkhianati hasil adalah prinsip saya</p>
+                            <h2>Kontak</h2>
+    
+                            <table>
+                                <tr>
+                                  <td><img src="telp.png" alt="tp" width="25dp" height="25dp"></td>  
+                                  <td>0813 6020 7406</td>
+                                </tr>
+                                <tr>
+                                  <td><img src="em.png" alt="em" width="30dp" height="25dp"></td>  
+                                  <td>afdalabdallahm@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="wa.png" alt ="wa" width="30dp" height="30dp"></td>  
+                                    <td>0813 6020 7406</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="ig.png" alt="ig" width="30dp" height="30dp"></td>  
+                                    <td>@afdalabdallah</td>
+                                </tr>
+                            </table>
+                            
+                        </div>
+                        
+                           
+                    </section>
+                    <section id="kelebihan">
+                        <div class="isi_k">
+                            <div style="padding-left: 20px;">
+                                <h2>Kelebihan</h2>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>Dapat mengatur waktu dengan baik</li>
+                                    <li>Mudah membaur</li>
+                                    <li>Dapat berbicara dengan baik di depan banyak orang</li>
+                                    <li>Bertanggung jawab</li>
+                                    <li>Bisa bekerja dalam tim</li>
+                                    <li>Profisiensi Bahasa Inggris yang baik</li>
+                                </ul>
+                            </div>
+                            <div style="padding-left: 20px;">
+                                <h2>Kekurangan</h2>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>Terlalu terburu-buru</li>
+                                    <li>Perhatian mudah teralihkan</li>
+                                    <li>Kurang menyusun barang dengan rapih</li>
+                                    <li>Sedikit mengeluarkan lebih banyak untuk makanan</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </section>    
+                </div>
+                <div class="layout" style="width: 60%;">
+                    <section id="pengalaman">
+                        <div style="padding: 20px; padding-top: 30px; padding-bottom: 0px;">
+                            <h2>Pengalaman Organisasi</h2>
+                            
+                        </div>
+                        <ul style="margin-top: 0px; padding-left: 40px;">
+                            <li>Staff OSIS Publikasi dan Dokumentasi <br>(2018-2019)</li>
+                            <li>Ketua tim Olimpiade Astronomi SMA Labschool<br>(2018-2019)</li>
+                            <li>Staff SAGOE PMKTR 2021<br>(2021-sekarang)</li>
+                            <li>Staff SCHEMATICS NPC 2021<br>(2021-sekarang)</li>
+                            <li>Staff Event JGR 2021 divisi Acara<br>(2021)</li>
+                            
+                        </ul>
+                        <div style="padding: 20px; padding-top: 30px; padding-bottom: 0px;">
+                            <h2>Achievements</h2>
+                            
+                        </div>
+                        <ul style="margin-top: 0px; padding-left: 40px;">
+                            <li>Gold Medal World Young Inventors Exhibition <br>(2018)</li>
+                            <li>Juara 3 OSN Astronomi tingkat Kabupaten/Kota<br>(2019)</li>
+                            
+                            
+                        </ul>
+                    </section>
+                    <section id="nama">
+                        <div class="center">
+                            <h1 style="margin-bottom: 0px;margin-top: 55px; font-family: PTSans; font-style: italic;">Muhammad Afdal Abdallah</h1>
+                        </div>
+                        <div id="line"></div>
+
+                        <h1 style="text-align: center;margin-top: 0px;font-family: PTSans; font-style: italic;">Mahasiswa Teknik Informatika ITS</h1>
+                        
+                        
+                    </section>
+                    <section id="skill">
+                        <div style="padding: 20px; padding-top: 30px; padding-bottom: 0px;">
+                            <h2>
+                                Riwayat Pendidikan
+                            </h2>
+                        </div>
+                        <ul>
+                            <li>S1-Teknik Informatika ITS<br>(2020-sekarang)</li>
+                            <li>SMA Laboratorium Syiah Kuala<br>(2017-2020)</li>
+                            <li>SMP Fatih Bilingual School<br>(2014-2017)</li>
+                            <li>SD Teuku Nyak Arief Fatih Bilingual School<br>(2008-2014)</li>
+                        </ul>
+                        <div style="margin-top: 0px;padding-left: 20px;">
+                            <h2>Other Skills</h2>
+                        </div>
+                        <div style="display: flex;">
+                            <div style="margin-left: 22px;">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot" style="background-color: white;"></span>
+                                <span class="dot" style="background-color: white;"></span>
+                                <p style="margin-top: 0px;">Public speaking</p>
+                            </div>
+                            <div style="margin-left: 22px;">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot" style="background-color: white;"></span>
+                                <span class="dot" style="background-color: white;"></span>
+                                <span class="dot" style="background-color: white;"></span>
+                                <p style="margin-top: 0px;">Leadership</p>
+                            </div>
+                            <div style="margin-left: 22px;">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot" ></span>
+                                <span class="dot" ></span>
+                                <span class="dot" style="background-color: white;"></span>
+                                <p style="margin-top: 0px;">Athletic</p>
+                            </div>
+                           
+                            
+                        </div>
+                        <div style="margin-left: 22px;">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot" ></span>
+                            <span class="dot" ></span>
+                            <span class="dot" style="background-color: white;"></span>
+                            <p style="margin-top: 0px;">English Profeciency</p>
+                        </div>
+                            
+                        
+                    </section>
+                </div>
+            </div>
+            
+        </main>
+    </body>
+</html>
