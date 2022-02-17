@@ -8,21 +8,19 @@ const upload = multer();
 
 let users = []
 
-app.use(upload.array());
+app.use(bodyParser.urlencoded({ extended: false })); 
+app.use(bodyParser.json());
 app.use(express.static(__dirname+"/public"));
 
 router.get('/', (req, res)=>{
-    // console.log(users);
-    res.send(users);
-    // res.sendFile(path.join(__dirname, "../public/signup.html"));
+    res.sendFile(path.join(__dirname, "../public/signup.html"));
 });
 
 
 router.post('/', (req,res) => {
     const user = req.body;
     users.push(user);
-    // // var body = JSON.stringify(req.body);
-    // console.log(user);
+    // res.send(users);
     res.send(`User with username ${user.username} added!`);
 })
 
