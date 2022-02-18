@@ -3,14 +3,21 @@
 		"firstName": "Muhammad Afdal",
 		"lastName": "Abdallah",
 		"Email": "afdalabdallahm@gmail.com",
-		"username": "asdasd",
-		"password": "asdasd"
+		"username": "afdala",
+		"password": "adadada"
 	},
 	{
 		"firstName": "Muhammad Afdal",
 		"lastName": "Abdallah",
 		"Email": "afdalabdallahm@gmail.com",
 		"username": "adad",
-		"password": "adad"
+		"password": "adada"
+	},
+	{
+		"firstName": "Afdal",
+		"lastName": "Abdallah",
+		"Email": "afdalabdallahm@gmail.com",
+		"username": "afdalabdallah",
+		"password": "adadada"
 	}
 ]
