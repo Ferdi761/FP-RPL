@@ -1,4 +1,5 @@
 const express = require('express');
+const fs = require('fs');
 const path = require('path');
 const bodyParser = require("body-parser");
 const multer = require('multer');
@@ -7,21 +8,42 @@ const app = express();
 const upload = multer();
 
 let users = []
+app.use(express.json());
+
+const saveUser = (data) => {
+    const stringData =  JSON.stringify(data,null, '\t');
+    fs.writeFileSync('./users.json', stringData);
+}
+
+const getUser = () => {
+    const jsonData = fs.readFileSync('./users.json');
+    return JSON.parse(jsonData);
+}
 
 app.use(bodyParser.urlencoded({ extended: false })); 
 app.use(bodyParser.json());
 app.use(express.static(__dirname+"/public"));
 
 router.get('/', (req, res)=>{
-    res.sendFile(path.join(__dirname, "../public/signup.html"));
+    res.sendFile(path.join(__dirname, "../public/form.html"));
 });
 
 
 router.post('/', (req,res) => {
-    const user = req.body;
-    users.push(user);
-    // res.send(users);
-    res.send(`User with username ${user.username} added!`);
+    const newUser = req.body;
+    // let dataUser = getUser();
+    // const existData = dataUser.find(user => user.username === newUser.username);
+    const exist = users.find(user => user.username === newUser.username);
+    if(exist ){
+        return res.status(409).send({error:true, msg:'Username already exist'});
+    }
+    users.push(newUser);
+    // console.log(users);
+    // dataUser.push(newUser);
+    res.send(users);
+    // saveUser(dataUser);
+    
+    // res.send(`User with username ${user.username} added!`);
 })
 
 //search
