@@ -87,11 +87,10 @@ router.patch('/:username', (req, res) => {
     if(password){
         foundData.password = password;
     }
-    const filterData = dataUser.filter((user) => user.username != username);
-    filterData.push(foundData);
-    saveUser(filterData);
-    console.log(`User with username ${username} has updated his account!`)
-    res.status(200).send({msg:`User with username ${username} has updated his account!`, data: foundData});
+    
+    saveUser(dataUser);
+    console.log(`User with username ${username} has updated their account!`)
+    res.status(200).send({msg:`User with username ${username} has updated their account!`, data: foundData});
     
 })
 
